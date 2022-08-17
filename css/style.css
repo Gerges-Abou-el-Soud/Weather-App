@@ -1,0 +1,339 @@
+*
+{
+    font-family: 'Roboto', sans-serif;
+}
+:root
+{
+    --mainColor:#1e202b;
+    --secondColor:#323544;
+    --thirdColor:#009ad8;
+}
+/* Navbar Style */
+.navbar
+{
+    background-color: var(--mainColor);
+    padding: 25px 0;
+    min-height: 20vh;
+}
+.navbar .navbar-brand .logo-cont
+{
+    line-height: 1px;
+}
+.navbar .navbar-brand .logo-cont h1
+{
+    font-size: 16px;
+}
+.navbar .navbar-brand .logo-cont span
+{
+    font-size: 10px;
+}
+
+.navbar .navbarLinks li
+{
+    padding: 0 20px;
+}
+.navbar .navbarLinks li a
+{
+    padding: 0px 20px !important;
+    color: white;
+    border: 2px solid transparent;
+    border-radius: 25px;
+    transition: color 500ms, border 500ms ;
+}
+.navbar .navbarLinks li .active
+{
+    color: var(--thirdColor);
+    border-color: var(--thirdColor);
+}
+.navbar .navbarLinks li a:hover
+{
+    color: var(--thirdColor);
+    border: 2px solid var(--thirdColor);
+    border-radius: 25px;
+}
+.navbar button
+{
+    width: 40px;
+    height: 40px;
+    border: 2px solid transparent;
+    border-radius: 50%;
+    transition: color 500ms, border 500ms ;
+}
+.navbar button:focus
+{
+    border-color: var(--thirdColor);
+    outline: none;
+    box-shadow: none;
+}
+.navbar button:hover
+{
+    border-color: var(--thirdColor);
+}
+.navbar button:hover svg
+{
+    color: var(--thirdColor) !important;
+}
+@media screen and (max-width:991px) 
+{
+    .navbar .navbarLinks
+    {
+        margin-top: 30px;
+        background-color: var(--secondColor);
+        border-radius: 10px;
+    }
+    .navbar .navbarLinks li
+    {
+        padding:10px 0;
+        border-bottom: 1px solid rgb(171, 171, 171);
+    }
+    .navbar .navbarLinks li:last-child
+    {
+        border: none;
+    }
+    .navbar .navbarLinks a
+    {
+        text-align: center;
+        border: none !important;
+    }
+    .navbar .navbarLinks a:hover
+    {
+        border: none !important;
+    }
+    .navbar .navbarLinks .active
+    {
+        border: none;
+    }
+}
+section
+{
+    padding: 5%;
+}
+/* Banner Style */
+.banner
+{
+    height: 50vh;
+    background-image: url(../images/banner.png);
+    background-position: center center;
+    background-size: cover;
+
+}
+.banner .searchArea
+{
+    position: relative;
+    padding: 10px 0;
+}
+.banner .searchArea input[type=search]
+{
+    background-color: var(--mainColor);
+    padding: 20px 15px;
+    border: none;
+    border-radius: 35px;
+    color: white;
+}
+.banner .searchArea input[type=submit]
+{
+    position: absolute;
+    top: 52px;
+    right: 4px;
+    background-color: var(--thirdColor);
+    padding: 16px 50px;
+    border: none;
+    border-radius: 35px;
+    color: white;
+}
+.banner .searchArea input:focus
+{
+    border: none;
+    outline: none;
+    box-shadow: none;
+}
+/* Forcast Area */
+.forcast-section
+{
+    height: 40vh;
+    background-color: var(--mainColor);
+}
+.forcast-section .forcast-content
+{
+    transform: translateY(-50%);
+}
+.forcast-section .forcast-content .forcast-card
+{
+    background-color: var(--secondColor);
+    padding: 0;
+}
+.forcast-section .forcast-content .forcast-card .card-header
+{
+    padding: 10px 10px;
+    background-color: var(--mainColor);
+}
+.forcast-section .forcast-content .forcast-card .card-body
+{
+    padding: 15px;
+    padding-bottom: 25px;
+}
+.forcast-section .forcast-content .forcast-card .card-body p,span
+{
+    color:rgb(229, 229, 229);
+}
+.forcast-section .forcast-content .first-forcast-card
+{
+    border-radius:15px 0 0 15px;
+}
+.forcast-section .forcast-content .first-forcast-card .card-header
+{
+    border-radius:15px 0 0 0;
+}
+.forcast-section .forcast-content .first-forcast-card .card-body .temp
+{
+    font-size: 6rem;
+    font-weight: bolder;
+}
+.forcast-section .forcast-content .first-forcast-card .card-body .weather-status img
+{
+    width: 100px;
+    height: 100px;
+}
+.forcast-section .forcast-content .first-forcast-card .card-body .sky-status
+{
+    padding: 10px 0;
+    color: var(--thirdColor);
+}
+.forcast-section .forcast-content .first-forcast-card .card-body .rain-Wind-status img
+{
+    width: 30px;
+    margin: 0 0 0 10px;
+}
+.forcast-section .forcast-content .first-forcast-card .card-body .rain-Wind-status span
+{
+    font-size: 1.2rem;
+}
+.forcast-section .forcast-content .sub-forcast-card .card-body
+{
+    padding-top: 60px;
+}
+.forcast-section .forcast-content .sub-forcast-card .card-body img
+{
+    width: 40px;
+    margin: 10px 0;
+}
+.forcast-section .forcast-content .sub-forcast-card .card-body .max-temp
+{
+    padding-top: 15px;
+    font-size: 1.5rem;
+    font-weight: bolder;
+    color: white;
+}
+.forcast-section .forcast-content .sub-forcast-card .card-body .min-temp
+{
+    line-height: 5px;
+    font-size: 1.1rem;
+}
+.forcast-section .forcast-content .sub-forcast-card .card-body .sky-status
+{
+    padding-top: 10px;
+    color: var(--thirdColor);
+}
+.forcast-section .forcast-content .mid-forcast-card 
+{
+    background-color: #242632;
+}
+.forcast-section .forcast-content .last-forcast-card 
+{
+    border-radius:0 15px 15px 0;
+}
+.forcast-section .forcast-content .last-forcast-card .card-header
+{
+    border-radius:0 15px 0 0;
+}
+@media screen and (max-width:991px) 
+{
+.forcast-section
+{
+    height: auto;
+}
+.forcast-section .forcast-content
+{
+    transform: translateY(-20%);
+}
+.forcast-section .forcast-content .first-forcast-card
+{
+    border-radius:15px 15px 0 0;
+}
+.forcast-section .forcast-content .first-forcast-card .card-header
+{
+    border-radius:15px 15px 0 0;
+}
+.forcast-section .forcast-content .last-forcast-card 
+{
+    border-radius:0 0 15px 15px;
+}
+.forcast-section .forcast-content .last-forcast-card .card-header
+{
+    border-radius:0;
+}
+}
+/* Contact Style  */
+.contact
+{
+    min-height: 40vh;
+    background-color: var(--secondColor);
+}
+.contact .supscribArea
+{
+    position: relative;
+    padding: 10px 0;
+}
+.contact .supscribArea input[type=email]
+{
+    background-color: var(--mainColor);
+    padding: 20px 15px;
+    border: none;
+    border-radius: 35px;
+    color: white;
+}
+.contact .supscribArea input[type=submit]
+{
+    position: absolute;
+    top: 52px;
+    right: 4px;
+    background-color: var(--thirdColor);
+    padding: 16px 50px;
+    border: none;
+    border-radius: 35px;
+    color: white;
+}
+.contact .supscribArea input:focus
+{
+    border: none;
+    outline: none;
+    box-shadow: none;
+}
+.contact .social a
+{
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    background-color: var(--mainColor);
+    margin: 10px;
+    text-align: center;
+    border-radius: 50%;
+    text-decoration: none;
+    color: var(--thirdColor);
+    transition: color 500ms, background-color 500ms;
+}
+.contact .social a svg
+{
+    font-size: 1.4rem;
+    transform: translateY(12.5px);
+}
+.contact .social a:hover
+{
+    color: white;
+    background-color: var(--thirdColor);
+}
+.contact p
+{
+    color:rgb(229, 229, 229);
+    font-size: medium;
+}
